@@ -1,5 +1,5 @@
 {
-  "name": "testwebservice",
+  "name": "",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -11,7 +11,21 @@
     "debug": "~2.1.1",
     "express": "~4.11.1",
     "jade": "~1.9.1",
+    "mongoose": "^3.8.21",
     "morgan": "~1.5.1",
     "serve-favicon": "~2.2.0"
-  }
+  },
+  "description": "This is a test web service.",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sky3d/testwebservice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sky3d/testwebservice/issues"
+  },
+  "homepage": "https://github.com/sky3d/testwebservice",
+  "devDependencies": {}
 }

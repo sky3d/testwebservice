@@ -3,3 +3,8 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+  p Device list:
+    ul
+      each device in devices
+          li: a(href="/device/#{device.Num}") #{device.Title}
