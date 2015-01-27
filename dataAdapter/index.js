@@ -28,7 +28,7 @@ exports.getDevices = function getDevices(callback) {
         callback(devs);
     });
 };
-exports.loadDevData = function loadDevData(devNum, res) {
+exports.loadDevData = function loadDevData(devNum, callback) {
     var Entry = mongoose.model('dataentries', devSchema);
     var param = "dev" + devNum;
 
@@ -38,7 +38,7 @@ exports.loadDevData = function loadDevData(devNum, res) {
         if (err)
             return handleError(err);
 
-        return entries;
+        return callback(entries);
 
         //console.log("CNT " + entries.length);
         //entries.forEach(function (entry) {
