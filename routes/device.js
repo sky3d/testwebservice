@@ -13,4 +13,8 @@ router.get('/:devNum', function(req, res, next) {
     //});
 
 });
+router.post('/getdevdata', function(req, res) {
+    res.send({arg: 1, val:190});
+});
+
 module.exports = router;

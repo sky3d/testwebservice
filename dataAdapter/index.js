@@ -1,11 +1,11 @@
 var mongoose = require('mongoose');
-var js = require('../public/javascripts');
+//var js = require('../public/javascripts');
 
 mongoose.connect('mongodb://localhost/devicedb');
 
 mongoose.connection.once('open', function (callback) {
     console.log("Database opened!!!");
-    js.onConnected();
+    //js.onConnected();
 });
 
 var devSchema = mongoose.Schema({
@@ -49,11 +49,6 @@ exports.loadDevData = function loadDevData(devNum, res) {
     });
     //console.log('Done!');
 };
-
-exports.getDevCount = function getDevCount() {
-    return 2;
-}
-
 
 console.log('dataAdapter is loading...');
 module.exports = this;

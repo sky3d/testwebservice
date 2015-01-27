@@ -1,6 +1,15 @@
-h2 Device  #{dev}
+extends layout
 
-#deviceInfo
-    .block
-    p Details #{data}
+block content
+    h2 Device  #{dev}
+
+    #deviceInfo
+        .block
+        p Details #{data}
+
+    button#btnDevData Show details...
+    p#devData
+
+block scripts
+    script(src='/javascripts/device.js')
 
