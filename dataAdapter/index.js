@@ -37,17 +37,9 @@ exports.loadDevData = function loadDevData(devNum, callback) {
     Entry.find({'entry.title':param}, function (err, entries) {
         if (err)
             return handleError(err);
-
         return callback(entries);
 
-        //console.log("CNT " + entries.length);
-        //entries.forEach(function (entry) {
-        //    entry = entry.toObject().entry;
-        //    console.log('title: %s is a num: %s', entry.title, entry.num);
-        //});
-
     });
-    //console.log('Done!');
 };
 
 console.log('dataAdapter is loading...');
